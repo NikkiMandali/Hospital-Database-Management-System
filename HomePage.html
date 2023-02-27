@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+	<link rel = "stylesheet" href = "my.css">
+	<link rel = "stylesheet" href = "css/normalize.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" th:href="@{/home}">Hospital Management System</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/patients}">Patients</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/employees}">Employees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/rooms}">Rooms</a>
+      </li>
+      <div class = "navbar-collapse bg-black">
+           <div class = "search-bar">
+               <form>
+                  <div class = "search-bar-box flex">
+                      <span class = "search-icon flex">
+                      </span>
+                      <input type = "serch" class = "search-control" placeholder="Search here">
+                  </div>
+               </form>
+           </div>
+      </div> 
+    </ul>
+  </div>
+</nav>
+    
+
+    <!-- header -->
+    <header class = "header bg-blue">
+        <nav class = "navbar bg-blue">
+            <div class = "container flex">
+                <a href = "HomePage.html" class = "navbar-brand">
+                </a>
+            </div>
+        </nav>
+
+        <div class = "header-inner text-black text-center">
+            <div class = "container grid">
+                <div class = "header-inner-left">
+                    <h1>Your Most trusted Health Partner</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <main>
+        <!-- about section -->
+        <section id = "about" class = "about py">
+            <div class = "about-inner">
+                <div class = "container grid">
+                    <div class = "about-left text-center">
+                        <div class = "section-head">
+                            <h2>About Us</h2>
+                            <div class = "border-line"></div>
+                        </div>
+                        <p class = "text text-lg">Taking Care of our Friends and Neighbours. Over a long period of work we have provided hundreds of thousands of medical services, Staffed with highly trained and compassionate professionals provided with a high quality healthcare.</p>
+                        <a href = "#" class = "btn btn-black">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+
+        <!-- package services section -->
+        <section id = "package-service" class = "package-service py text-center">
+            <div class = "container">
+                <div class = "package-service-inner grid">
+                    <div class = "package-service-item bg-black">
+                        <div class = "icon flex">
+                            <i class = "fas fa-phone fa-2x"></i>
+                        </div>
+                        <h3>Regular Case</h3>
+                        <a href = "#" class = "btn btn-blue">Read More</a>
+                    </div>
+
+                    <div class = "package-service-item bg-black">
+                        <div class = "icon flex">
+                            <i class = "fas fa-calendar-alt fa-2x"></i>
+                        </div>
+                        <h3>Serious Case</h3>
+                        <a href = "#" class = "btn btn-blue">Read More</a>
+                    </div>
+                    
+                    <div class = "package-service-item bg-black">
+                        <div class = "icon flex">
+                            <i class = "fas fa-comments fa-2x"></i>
+                        </div>
+                        <h3>Emergency Case</h3>
+                        <a href = "#" class = "btn btn-blue">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of package services section -->
+    </main>
+
+    <!-- custom js -->
+    <script src = "script.js"></script>
+</body>
+</html>

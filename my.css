@@ -1,0 +1,42 @@
+input[type="radio"]{
+  margin: 0 7px 0 20px;
+}
+
+h1 {
+  color: navy;
+  margin: auto;
+  margin-top: 10px;
+}
+
+table {
+	margin: auto;
+	margin-top: 15px;
+}
+
+.search-control{
+    height: 27px;
+    width: 100%;
+    border-radius: 1.9rem;
+    border: 2px solid var(--light-gray);
+    padding: 0 1.5rem;
+}
+
+.package-service-item .icon{
+    width: 86px;
+    height: 86px;
+    background-color: var(--light-blue-color);
+    border-radius: 2rem;
+    border-bottom-right-radius: 0;
+    color: var(--light-color);
+    position: absolute;
+    top: -43px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+        -ms-transform: translateX(-50%) rotate(45deg);
+            transform: translateX(-50%) rotate(45deg);
+}
+.package-service-item .icon i{
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
